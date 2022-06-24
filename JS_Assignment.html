@@ -1,0 +1,339 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assest/fevicon.png" type="image/x-icon">
+    <title>Deepak-B1</title>
+
+    <!-- JavaScript Code Started here..... -->
+    <script>
+     //    This is for Name
+      function nameValidate() {
+        var name1 = document.getElementById("name").value;
+        if (name1 == "") {
+          alert("Enter your Name");
+        }
+        // if (/[A-Z]/.test(name.charAt(0)) === false) {
+        //   alert("First letter in uppercase mandatory");
+        // }
+      }
+
+     //    This is for Username 
+      function userNameValidate() {
+        var username = document.getElementById("username").value;
+        if (username == "") {
+          alert("Enter your username");
+        }
+        if (/[A-Z]/.test(username.charAt(0)) === false) {
+          alert("First letter in uppercase mandatory");
+        }
+      }
+
+    //    This is for Password 
+      function passwordValidate() {
+        var password = document.getElementById("password").value;
+        if (password.length < 8 || password.length > 15) {
+          alert("Enter Password b/w 8-15");
+        }
+        if (password.match(/[A-Z]/g) == null) {
+          alert("Add UpperCase in Password");
+        }
+        if (password.match(/[a-z]/g) == null) {
+          alert("Add LowerCase is Password");
+        }
+        if (password.match(/[0-9]/g) == null) {
+          alert("Add number in Password");
+        }
+        if (password.match(/[!@#$%^&()_+\-=\[\]{};':"\\|,.<>\/?$]/g) == null) {
+          alert("Add Special character in Password");
+        }
+      }
+
+     //    This is for mobile 
+      function mobileValidate() {
+        var mobileCheck = document.getElementById("mobile").value;
+        if (
+          mobileCheck.match(/^[!@#$%^&()_+\-=\[\]{};':"\\|,.<>\/?]$/) != null || mobileCheck.match(/[A-Z]/g) != null || mobileCheck.match(/[a-z]/g) != null
+        ) {
+          alert("Only Number is allowed");
+        }
+      }
+
+      //    This is for Checkbox
+
+    </script>
+    <!-- JavaScript Code Ended here..... -->
+
+    <!-- Style Code Started here........ -->
+    <style>
+        body{
+            background-color:#AFEEEE;
+        }
+        .header{
+            background-color: rgb(7, 147, 152);
+            border-radius: 5px;
+        }
+
+        .login{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 5px;
+            background-color: rgb(11, 153, 30);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 350px;
+            margin-top: -48px;
+            font-size: x-large; 
+            border-radius: 10px; 
+            width: 50px; 
+        }
+
+        .form_container{
+             padding-top: 30px;
+             padding-left: 100px;
+             padding-right: 100px;
+             padding-bottom: 30px;
+             display: inline-block;
+             font-family: Arial, Helvetica, sans-serif;
+             margin-top: 10px;
+             margin-left: 500px;
+             margin-bottom: .0000001px;
+             border: 10px;
+             border-color: rgb(229, 245, 8);
+             border-radius: 10px;
+             background-color: rgb(66, 56, 56);
+             color: rgb(208, 232, 232);
+        }
+
+        .body{
+            background-color: rgb(135, 218, 34)
+        }
+        .name{
+            border-radius: 5px;
+            border-style: outset;
+            margin-bottom: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        .email{
+            border-radius: 5px;
+            border-style: outset;
+            margin-bottom: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        .username{
+            border-radius: 5px;
+            border-style: outset;
+            margin-bottom: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        .password{
+            border-radius: 5px;
+            border-style: outset;
+            margin-bottom: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        .mobile{
+            border-radius: 5px;
+            border-style: outset;
+            margin-bottom: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        .gender{
+            border-radius: 5px;
+            border-style: outset;
+            margin-bottom: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        .language{
+            border-radius: 5px;
+            border-style: outset;
+            margin-bottom: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        .degree{
+            border-radius: 5px;
+            border-style: outset;
+            margin-bottom: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        .button{
+            margin-bottom: .01px;
+            padding-top: 8px;
+            padding-bottom: 1px;
+            padding-left: 120px;
+            padding-right: 45px;
+        }
+
+        .submit{
+            border-radius: 5px;
+            color: rgb(49, 50, 52);
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .nav{
+           height: 3rem;
+           display: -webkit-box;
+           /* display: -ms-flexbox; */
+           /* display: flex; */
+           -webkit-box-pack: justify;
+           -ms-flex-pack: justify;
+           justify-content: space-between;
+           -webkit-box-align: center;
+           -ms-flex-align: center;
+           align-items: center;
+           font-weight: bold;
+           color: darkgray;
+           padding-left: 50px;
+           padding-right: 50px;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer{
+            margin-top: 20px;
+            margin-left: 630px;
+        }
+        .footer_dk{
+           margin-left: 63px;
+           font-size: 20px;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-bottom: 5px;
+        }
+
+    </style>
+    <!-- Style Code Ended here........ -->
+</head>
+
+<body>
+            <!-- HEADER -->
+            <header class="header">
+                <nav class="nav bd-grid">
+                    <div>
+                        <a href="" class="nav__logo">HOME</a>
+                    </div>
+                    <div class="nav__menu" id="nav-menu">
+                        <a href="https://www.linkedin.com/in/deepaklodha/">CONTACT</a>
+                    </div>
+                </nav>
+            </header>
+
+           <!-- Registration Center Data -->
+      <center class="login" style="width: 50%;">Student Registration Form</center>
+
+           <!-- Form Started here... -->
+     <form action="">
+
+        <div class="form_container">
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" onblur="nameValidate()" maxlength="20">
+            </div>
+    
+           <div class="email">
+                <label for="mail">Email Id:</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your eMail" maxlength="25" required>
+            </div>
+    
+            <div class="username">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" placeholder="Your Username" onchange="userNameValidate()" minlength="6" maxlength="10">
+            </div>
+    
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Your Password" onchange="passwordValidate()" minlength="8" maxlength="15">
+            </div>
+    
+            <div class="mobile">
+                <label for="mobile">Mobile No.:</label>
+                <input type="text" name="mobile" id="mobile" placeholder="Your Mobile No" onchange="mobileValidate()" maxlength="10">
+            </div>
+    
+            <div class="gender">
+                <label for="gender">Gender:</label>
+                <br>
+                <input type="radio" name="Gender" value="Male" id="gender" required> Male
+                <br>
+                <input type="radio" name="Gender" value="Female" id="gender" required> Female
+                <br>
+                <input type="radio" name="Gender" value="Other" id="gender" required> Other
+    
+            </div>
+    
+            <div id="language" class="language">
+                <label for="language">Programming Language (Known):</label>
+                <br>
+                <input type="checkbox" name="language" value="Java" id="language">Java
+                <br>
+                <input type="checkbox" name="language" value="Python" id="language">Python
+                <br>
+                <input type="checkbox" name="language" value="JavaScript" id="language">JavaScript
+                <br>
+                <input type="checkbox" name="language" value="Solidity" id="language">Solidity
+            </div>
+
+            <div class="degree">
+                <label for="degree">Degree: </label>
+                 <select name="Select" id="degree" required>
+                    <option value="-1">Select</option>
+                    <option value="Bachelors">Bachelors</option>
+                    <option value="Masters">Masters</option>
+                    <option value="Doctorate">Doctorate</option>
+                    <option value="Associate">Associate</option>
+                 </select>
+            </div>
+    
+            <div class="button">
+                <input type="submit" class="submit" value="Submit">
+            </div>
+    </div>
+  </form>
+   <!-- Form Ended here..... -->
+
+   <!-- This is footer data  -->
+  <footer class="footer">
+        <h1 class="footer_dk"> <u>DEEPAK LODHA</u></h1>
+        <span>
+            &#169;2022 - Design and Developed by Deepak <br>
+        </span>
+        <!-- <span>
+            Powered by www.sdkosm.org
+        </span> -->
+  </footer>
+  <!-- Footer Data End -->
+ 
+  </body>
+</html>
